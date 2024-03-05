@@ -1,0 +1,12 @@
+# RANGE (Stop) -> Range Object
+# RANGE (start, stop[,step ]) -> Range Object
+
+
+
+for numero in range (0, 10): #ele vai retornar os números de 0 a 9
+    print(numero, end=" ")
+
+
+#exemplo de built-in range    
+for numero in range (3, 31, 3): #ele vai retornar os números de 3 em 3, sendo o ultimo 30, pois o limite é 31
+    print(numero, end=" ")    
