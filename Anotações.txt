@@ -1,3 +1,22 @@
+SQL
+
+MER E DER
+Mer: Modelo Entidade Relacionamento - é representado através de diagramas, chamado Diagramas Entidades-Relacionamento
+Usado pra representar estrutura geral. Representação gráfica dos elementos.
+app.creately
+Entidades são nomeadas substantivos que representam de forma clara sua função
+Atributos: caracterisitcas das entidades
+
+Cardinalidade:
+Relacionamento 1..1 (um para um)
+Relacionamento 1..n ou 1 * (um para muitos)
+Relacionamento n..n ou *..* (muitos para muitos)
+
+Usando o site quickdatabasediagrams.com, que é uma ia, conseguimos traduzir algumas escritas em diagramas
+
+
+
+
 
 
 
