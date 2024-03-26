@@ -1,11 +1,11 @@
-SQL
+﻿SQL
 
 MER E DER
 Mer: Modelo Entidade Relacionamento - é representado através de diagramas, chamado Diagramas Entidades-Relacionamento
 Usado pra representar estrutura geral. Representação gráfica dos elementos.
 app.creately
 Entidades são nomeadas substantivos que representam de forma clara sua função
-Atributos: caracterisitcas das entidades
+Atributos: características das entidades
 
 Cardinalidade:
 Relacionamento 1..1 (um para um)
@@ -21,7 +21,7 @@ onde é armazenado os dados de forma organizada.
 Cada tabela tem um nome unico e é dividido em colunas e linhas
 
 COLUNAS:
-Representa um atributo especifico dos dados armazenados
+Representa um atributo específico dos dados armazenado
 Cada coluna tem seu nome unico e somente um tipo de dado (string, inteiro, data etc)
 
 REGISTRO 
@@ -73,14 +73,38 @@ O ALTER TABLE modifica a estratutura de uma tabela.
 Ela permite:ADICIONAR, ALTERAR OU EXCLUIR colunas; MODIFICAR AS RESTRIÇÕES, INDICES E RENOMEAR TABELAS ETC
 
 CHAVES PRIMÁRIAS
-Conceito:é um atributo ou conjunto de atributo que identifca de forma exclusiva cada regitro de nossa tabela
+Conceito:é um atributo ou conjunto de atributo que identifca de forma exclusiva uma linha em  uma tabela
 Ela garanti a integridade de dados porque ela impede a duplicação de registros
 Em uma tabela pode ter apenas uma chave primaria e esse valor nunca pode ser nulo
+Você constrói essas chaves primárias através das restrições(constraints) que são as regras que você define quando esta criando uma coluna.
+Assim, quando você faz isso, cria um índice unico para aquela coluna ou grupo de colunas
 
-CHAVES ESTRAANGEIRAS
+
+CHAVES ESTRANGEIRAS
+É uma coluna ou grupo de colunas em uma tabela que identifica unicamente uma linha em outra tabela, ou seja, é uma tabela onde ela apenas uma referencia e não contém todos os dados ali
+É usada para estabelecer e manter a integridade dos dados entre tabelas relacionadas
+Pode ser nula (NOT NULL)
+É possivel ter mais de uma ou nenhuma em uma tabela
+Então uma chave estrangeira é simplesmente uma coluna ou grupo de colunas, que é uma chave primaria em outra tabela
+É conhecida como tabela filho. Essa tabela pode ter mais de uma chave estrangeira dependendo do seu relacionamento com as outras
 
 
+As chaves estrangeiras tem algumas restrições:
+ON DELETE: Especifica o que acontece com os registros dependentes quando um registro pai é excluído
+ON UPDATE: Define o comportamento dos registros dependentes quando um registro pai é atualizado
+CASCADE, SET NULL, SET DEFAULT e RESTRICT
 
+
+NORMALIZAÇÃO DE DADOS
+Processo que organiza e estrutura um banco de dados.
+Evita redundâncias e anomalias, garantindo a consistencia dos dados
+
+Exemplo:
+ALTER TABLE usuarios
+ADD rua VARCHAR (100),
+ADD numero VARCHAR (10)
+ADD cidade VARCHAR (50)
+ADD estado Varchar(20)
 
 
 
