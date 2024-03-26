@@ -49,8 +49,35 @@ Default - criar um status/parametro/ para aquele registro
 MODELOS DE DADOS RELACIONAIS - OPERAÇÕES CRUD
 Comando insert:
 INSERT INTO
+Você coloca quais são as "colunas" que vai inserir e em values o "conteudo" de cada linha
 
+SELECT WHERE
+from (qual tabela)
+Where (aqui você coloca a condição que quer tenha ter esse x registro)
+As condições do SQL, tem alguns operadores diferentes dos comuns:
+LIKE - comparação de padroes
+IN - pertence a uma lista de valores
+BETWEEN - dentro de um intervalo
+AND - e lógico
+OR - ou lógico
+= - igualdade
+<> ou != - não igual
 
+UPDATE E DELETE
+São comandos que devemos prestar muita atenção!
+
+ALTERANDO E EXCLUINDO TABELAS - DROP TABLE E ALTER TABLE
+Ele é flexivel e sensivel
+O DROP TABLE, remove uma tabela existente de um banco de dados de dados relacional.Ele exclui permanente essa tabela
+O ALTER TABLE modifica a estratutura de uma tabela. 
+Ela permite:ADICIONAR, ALTERAR OU EXCLUIR colunas; MODIFICAR AS RESTRIÇÕES, INDICES E RENOMEAR TABELAS ETC
+
+CHAVES PRIMÁRIAS
+Conceito:é um atributo ou conjunto de atributo que identifca de forma exclusiva cada regitro de nossa tabela
+Ela garanti a integridade de dados porque ela impede a duplicação de registros
+Em uma tabela pode ter apenas uma chave primaria e esse valor nunca pode ser nulo
+
+CHAVES ESTRAANGEIRAS
 
 
 

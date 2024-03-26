@@ -1,0 +1,4 @@
+Comando Insert
+
+INSERT INTO reservas (id, id_usuário, id_destino, status, data_viagem) 
+	VALUES (1, 1, 1, "PENDENTE", '2024-01,12');

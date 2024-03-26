@@ -1,0 +1,3 @@
+Nesse caso estamos criando uma nova tabela e usando o drop table para substituir ela
+
+DROP TABLE usuarios;
