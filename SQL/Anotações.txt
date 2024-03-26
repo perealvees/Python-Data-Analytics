@@ -107,12 +107,35 @@ ADD cidade VARCHAR (50)
 ADD estado Varchar(20)
 
 
+CONSULTAS AVANÇADAS - JUNÇÕES E SUBCONSULTAS
+É quando junta as informações de outras tabelas.
+JOINS - Usados para combinar informações de varias tabelas para chegar num resultado em uma unica consulta
+Temos os seguintes tipos de JOIN: INNER, LEFT e RIGHT
+
+INNER - Retorna apenas as linhas que tem correpondência em ambas taelas envolvidas.
+A junção é feita com base de uma condição de igualdade especifica na clausula ON
 
 
+SUBCONSULTAS
+Podem ser usadas em: SELECT, FROM, WHERE, HAVING, JOIN.
+
+FUNÇÕES AGREGADAS
+Realiza algum tipo de pre processamento ou calculo nas colunas, retornando um unico valor
+
+COUNT:
+SELECT COUNT(*) FROM usuarios;
+SELECT COUNT(*) AS total_usuarios FROM usuarios; (nesse caso criamos uma variavel para armazenar o valor)
 
 
+MAX:
+SELECT MAX(TIMESTAMPDIFF(YEAR, data_nascimento, CURRENT_DATE())) as maior_idade
+FROM usuarios; (comando para saber qual a maior idade)
 
 
+AGRUPAMENTO DE RESULTADOS
+Usado para agrupar  grupos de acordo com um critério
+SELECT COUNT(*) from reservas
+GROUP by id_destino;
 
 
 
