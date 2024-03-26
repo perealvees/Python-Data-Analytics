@@ -14,7 +14,7 @@ Relacionamento n..n ou *..* (muitos para muitos)
 
 Usando o site quickdatabasediagrams.com, que é uma ia, conseguimos traduzir algumas escritas em diagramas
 
-
+usuario: adm - senha: S
 
 
 
